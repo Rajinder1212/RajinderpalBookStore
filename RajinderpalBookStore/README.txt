@@ -29,4 +29,7 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   rebuild the application 
   and test the application 
  in layout.cshml added css an javascript links
-  
+  added a drop down menu in views/shared/layout.cshtml
+  run it....
+  it works well.
+  0752
