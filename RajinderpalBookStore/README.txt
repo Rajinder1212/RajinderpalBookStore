@@ -15,3 +15,9 @@ Insert a two red break points in homecontroller.cs in  index and privacy
 after running the application dotted points are highlighted with yelow color and shows step by step procedure
 updated the boostrap.css file with cyborg coming from bootswatch website
 changethe site css with the new code of my theme also created a backup file for bootstrap.css
+view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
+ change light to dark navbar and bg-white to primary in layout.cshtml
+ <!-- removed text dark--> in line23 and 26
+  in footer add addition properties
+  removed text dark in line 9 ,20 and 23
+  tested thec applixcation
