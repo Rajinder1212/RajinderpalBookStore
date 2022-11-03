@@ -33,3 +33,8 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   run it....
   it works well.
   0752
+  Created new 3 projects 
+  copy the data folder and paste into .data access  and renamed the origional name to data_bk
+  0808
+  install identity.frameworkcore.relation in the dataaccess folder
+  namespace modified in ApplicationDbContext.cs
