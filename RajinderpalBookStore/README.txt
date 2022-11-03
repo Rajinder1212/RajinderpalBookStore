@@ -52,3 +52,7 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
    added new area folder in areas named as customer
    0847
    changes the routes in startup.cs 
+added a new words area.exists
+   0849
+   move controllers into customer in areas folder and delete models and data
+    [Area("Customer")] in homecontroller.cs
