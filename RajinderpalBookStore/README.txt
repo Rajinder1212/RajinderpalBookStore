@@ -51,3 +51,4 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
    added a new project reference in main folder
    added new area folder in areas named as customer
    0847
+   changes the routes in startup.cs 
