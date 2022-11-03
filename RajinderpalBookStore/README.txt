@@ -42,3 +42,8 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
    deleted all class.cs files in all new three proect
   copy models folder into Rajinderpals.models
   and renamed
+   added a project reference for models and data access
+  0829
+   rename models folder to view models
+  added a .viewmodels in error.viewmodel.cs to its namespace
+  0836
