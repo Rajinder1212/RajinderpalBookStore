@@ -58,3 +58,4 @@ added a new words area.exists
     [Area("Customer")] in homecontroller.cs
      move views into controller
      coorected the errors i the error.html file 
+i Have no errors still my application lost its connection with local host 
