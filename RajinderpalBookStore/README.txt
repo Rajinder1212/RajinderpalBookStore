@@ -21,3 +21,11 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   in footer add addition properties
   removed text dark in line 9 ,20 and 23
   tested thec applixcation
+    and it wroks in first attemp hurray!!!!
+  0910
+  2022-02-11
+  0736
+  working on the applications
+  rebuild the application 
+  and test the application 
+ 
