@@ -28,4 +28,5 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   working on the applications
   rebuild the application 
   and test the application 
- 
+ in layout.cshml added css an javascript links
+  
