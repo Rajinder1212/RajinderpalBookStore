@@ -60,4 +60,5 @@ added a new words area.exists
      coorected the errors i the error.html file 
 i Have no errors still my application lost its connection with local host 
 changed the location for shared 
-and changed the start up file.....
+and changed the start up file `
+
