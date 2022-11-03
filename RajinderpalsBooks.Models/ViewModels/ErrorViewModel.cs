@@ -1,6 +1,6 @@
 using System;
 
-namespace RajinderpalBookStore.Models.ViewModels //added ViewModels
+namespace RajinderpalBookStore.Models.ViewModels.ErrorViewModels //added ViewModels annd updated ErrorViewModels
 {
     public class ErrorViewModel
     {

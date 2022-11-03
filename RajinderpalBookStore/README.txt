@@ -47,3 +47,7 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
    rename models folder to view models
   added a .viewmodels in error.viewmodel.cs to its namespace
   0836
+  added public static in sd.cs
+   added a new project reference in main folder
+   added new area folder in areas named as customer
+   0847

@@ -13,4 +13,9 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RajinderpalsBooks.Models\RajinderpalsBooks.Models.csproj" />
+    <ProjectReference Include="..\RajinderpalsBooks.Utility\RajinderpalsBooks.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
