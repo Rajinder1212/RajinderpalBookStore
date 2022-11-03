@@ -40,7 +40,7 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   namespace modified in ApplicationDbContext.cs
   deleted migrations and downloaded new pakages 
    deleted all class.cs files in all new three proect
-  copy models folder into Rajinderpals.models
+  copy models folder into Rajinderpal.models
   and renamed
    added a project reference for models and data access
   0829
@@ -60,4 +60,4 @@ added a new words area.exists
      coorected the errors i the error.html file 
 i Have no errors still my application lost its connection with local host 
 changed the location for shared 
-and changed the start up file 
+and changed the start up file.....
