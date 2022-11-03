@@ -39,3 +39,6 @@ view/shared/layout.cshtml change 8 line  to bootstrap.min.css to .css
   install identity.frameworkcore.relation in the dataaccess folder
   namespace modified in ApplicationDbContext.cs
   deleted migrations and downloaded new pakages 
+   deleted all class.cs files in all new three proect
+  copy models folder into Rajinderpals.models
+  and renamed
