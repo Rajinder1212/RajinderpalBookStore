@@ -60,9 +60,17 @@ namespace RajinderpalBookStore
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                    name: "Areas",
+                    areaName:"Customer",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"); // updated this
+                name: "default",
+                  pattern: "{controller=Home}/{action=Index}/{id?}");
+
+               /* endpoints.MapControllerRoute(
+                    name: "Areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");*/ // updated this
                 endpoints.MapRazorPages();
             });
         }
