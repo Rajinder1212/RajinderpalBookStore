@@ -56,3 +56,5 @@ added a new words area.exists
    0849
    move controllers into customer in areas folder and delete models and data
     [Area("Customer")] in homecontroller.cs
+     move views into controller
+     coorected the errors i the error.html file 
