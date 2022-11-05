@@ -75,6 +75,16 @@ In appsetting.json did changes to default connection
 1055
  use this command add-migration AddDefaultIdentityMigration for adding a migration
 
+ 1130
+ while creating migration it is created in Rajinderpalbook store instead of .Dataaccess file
+
+ 1132
+ while adding command it asked for specify what context you want  then build failed
+ but it works in original file
+ 20221105025349_AddDefaultIdentityMigration  this is migration file name
+
+
+
 
 
 
