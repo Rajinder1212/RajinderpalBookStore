@@ -66,5 +66,6 @@ and changed the start up file `
 0541
 created a new folder name admin in areas, then deleted models and data folder.
 
-
+0547
+move the view folder into the admin folder
 
