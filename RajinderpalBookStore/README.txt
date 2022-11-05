@@ -62,10 +62,19 @@ i Have no errors still my application lost its connection with local host
 changed the location for shared 
 and changed the start up file `
 
-2022-11-04
-0541
+2022-11-04    0541
+
 created a new folder name admin in areas, then deleted models and data folder.
 
 0547
 move the view folder into the admin folder
+
+1051
+In appsetting.json did changes to default connection
+
+1055
+ use this command add-migration AddDefaultIdentityMigration for adding a migration
+
+
+
 
