@@ -83,6 +83,17 @@ In appsetting.json did changes to default connection
  but it works in original file
  20221105025349_AddDefaultIdentityMigration  this is migration file name
 
+ 1146
+ in .model folder added a new class name category.cs and modified the project
+
+ 1158
+ added the migration 
+ updated ApplicationDbContext.cs
+ line 06 and 16
+
+ 
+
+
 
 
 

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RajinderpalsBooks.Models; //added using staement
 
 namespace RajinderpalBookStore.Data
 {
@@ -12,5 +13,6 @@ namespace RajinderpalBookStore.Data
             : base(options)
         {
         }
+        public DbSet<Category> Categories { get; set; } // added this line
     }
 }
