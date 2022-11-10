@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RajinderpalBookStore.Data;
+using RajinderpalsBooks.DataAccess.Data;
 
-namespace RajinderpalBookStore.Data.Migrations
+namespace RajinderpalsBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221105034934_AddCategoryToDb")]
-    partial class AddCategoryToDb
+    [Migration("20221110183025_AddDefaultIdentityMigration")]
+    partial class AddDefaultIdentityMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

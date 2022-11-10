@@ -91,6 +91,18 @@ In appsetting.json did changes to default connection
  updated ApplicationDbContext.cs
  line 06 and 16
 
+ 11-10-2022 
+ 
+ 0131
+
+ In applicationdbcontext in data access folde correct the reference namespace
+  in startup made vchanges for  using statment to refer the application dbcontext file
+
+  0134
+ Added migration for adddefaultidentity migration
+20221110183025_AddDefaultIdentityMigration.cs
+
+
  
 
 
