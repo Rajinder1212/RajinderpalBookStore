@@ -118,6 +118,12 @@ updated database
 Deleted old migration and created new migration 
 updated the database
 
+0226
+add repository
+then add Irepository
+added using stements and given lines
+
+
 
  
 
