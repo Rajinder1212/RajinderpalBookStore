@@ -73,34 +73,44 @@ move the view folder into the admin folder
 In appsetting.json did changes to default connection
 
 1055
- use this command add-migration AddDefaultIdentityMigration for adding a migration
+use this command add-migration AddDefaultIdentityMigration for adding a migration
 
- 1130
- while creating migration it is created in Rajinderpalbook store instead of .Dataaccess file
 
- 1132
- while adding command it asked for specify what context you want  then build failed
- but it works in original file
- 20221105025349_AddDefaultIdentityMigration  this is migration file name
+1130
+while creating migration it is created in Rajinderpalbook store instead of .Dataaccess file
 
- 1146
- in .model folder added a new class name category.cs and modified the project
 
- 1158
- added the migration 
- updated ApplicationDbContext.cs
- line 06 and 16
 
- 11-10-2022 
+1132
+while adding command it asked for specify what context you want  then build failed
+but it works in original file
+20221105025349_AddDefaultIdentityMigration  this is migration file name
+
+
+1146
+in .model folder added a new class name category.cs and modified the project
+
+
+1158
+added the migration 
+updated ApplicationDbContext.cs
+line 06 and 16
+
+11-10-2022 
  
- 0131
+0131
 
- In applicationdbcontext in data access folde correct the reference namespace
-  in startup made vchanges for  using statment to refer the application dbcontext file
 
-  0134
- Added migration for adddefaultidentity migration
+In applicationdbcontext in data access folde correct the reference namespace
+ in startup made vchanges for  using statment to refer the application dbcontext file
+
+0134
+Added migration for adddefaultidentity migration
 20221110183025_AddDefaultIdentityMigration.cs
+
+
+0135
+updated database
 
 
  
