@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using RajinderpalsBooks.Models; // added using statement
 namespace RajinderpalsBooks.DataAccess.Data // added DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
@@ -12,5 +12,6 @@ namespace RajinderpalsBooks.DataAccess.Data // added DataAccess.Data
             : base(options)
         {
         }
+        public DbSet<Category> Categories { get; set; }   // added this line
     }
 }

@@ -100,9 +100,10 @@ line 06 and 16
  
 0131
 
+I got error for reference error for application db context..
 
-In applicationdbcontext in data access folde correct the reference namespace
- in startup made vchanges for  using statment to refer the application dbcontext file
+In applicationdbcontext in data access folder correct the reference namespace
+in startup made vchanges for  using statment to refer the application dbcontext file
 
 0134
 Added migration for adddefaultidentity migration
@@ -111,6 +112,11 @@ Added migration for adddefaultidentity migration
 
 0135
 updated database
+
+
+0148
+Deleted old migration and created new migration 
+updated the database
 
 
  
