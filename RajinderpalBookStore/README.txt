@@ -96,7 +96,10 @@ added the migration
 updated ApplicationDbContext.cs
 line 06 and 16
 
+
+
 11-10-2022 
+
  
 0131
 
@@ -105,9 +108,13 @@ I got error for reference error for application db context..
 In applicationdbcontext in data access folder correct the reference namespace
 in startup made vchanges for  using statment to refer the application dbcontext file
 
+
+
 0134
 Added migration for adddefaultidentity migration
 20221110183025_AddDefaultIdentityMigration.cs
+
+
 
 
 0135
@@ -118,10 +125,19 @@ updated database
 Deleted old migration and created new migration 
 updated the database
 
+
 0226
 add repository
 then add Irepository
 added using stements and given lines
+
+
+
+
+0241
+added a new class Respository.cs in respostory folder 
+Add content which is given by sir 
+Also added using statements
 
 
 
