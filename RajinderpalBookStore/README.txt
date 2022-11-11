@@ -131,9 +131,6 @@ add repository
 then add Irepository
 added using stements and given lines
 
-
-
-
 0241
 added a new class Respository.cs in respostory folder 
 Add content which is given by sir 
@@ -146,6 +143,14 @@ created interface called IRepository folder named ICategoryRepository
 0518
 in repository folder added a categoryRepository class 
 made changes acccording to ppt
+
+0522
+added a new item called ISP_Call.cs in Irepository folder
+
+0545
+added a lot of content in ISP_call.cs carfully..
+
+
 
 
 
