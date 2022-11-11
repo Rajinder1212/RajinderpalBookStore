@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Linq.Expressions;   // added 5 ussing statements
 
-namespace AndrewsBooks.DataAccess.Repository
+namespace RajinderpalsBooks.DataAccess.Repository
 {
     // Implements all the methods of the IRepository
     public class Repository<T> : IRepository<T> where T : class

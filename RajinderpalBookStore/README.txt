@@ -139,6 +139,16 @@ added a new class Respository.cs in respostory folder
 Add content which is given by sir 
 Also added using statements
 
+11-11-2022
+0436
+created interface called IRepository folder named ICategoryRepository
+
+0518
+in repository folder added a categoryRepository class 
+made changes acccording to ppt
+
+
+
 
 
  
