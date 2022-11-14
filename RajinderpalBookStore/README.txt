@@ -139,6 +139,10 @@ added new using statement named     using Microsoft.Data.SqlClient;
 
 Again I got errors then I click on potential errors and fixed it
 
+0346
+added a new interface in Irepository
+ added content
+
 
 
 
