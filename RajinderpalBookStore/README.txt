@@ -134,6 +134,11 @@ aded new class in respository named SP_Call.cs
 
 added a huge content in SP_Call.cs with using statements
 
+0321
+added new using statement named     using Microsoft.Data.SqlClient; 
+
+Again I got errors then I click on potential errors and fixed it
+
 
 
 

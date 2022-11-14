@@ -5,6 +5,8 @@ using Dapper;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient; // added new using statement
+using System.Linq;
 
 namespace RajinderpalsBooks.DataAccess.Repository
 {
@@ -45,14 +47,14 @@ namespace RajinderpalsBooks.DataAccess.Repository
 
         public Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedurename, DynamicParameters param = null)
         {
-          using SqlConnection  sqlCon = new SqlConnection(ConnectionString))
-                {
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+            {
                 sqlCon.Open();
                 var result = SqlMapper.QueryMultiple(sqlCon, procedurename, param, commandType: System.Data.CommandType.StoredProcedure);
                 var item1 = result.Read<T1>().ToList();     // make ssure to add using statement for LINQ
                 var item2 = result.Read<T2>().ToList();
 
-                if(item1 !=null && item2 != null)
+                if (item1 != null && item2 != null)
                 {
                     return new Tuple<IEnumerable<T1>, IEnumerable<T2>>(item1, item2);
                 }
@@ -75,7 +77,7 @@ namespace RajinderpalsBooks.DataAccess.Repository
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
             {
                 sqlcon.Open();
-                return (T)Convert.ChangeType(sqlcon.executeScalar<T>(procedurename, param, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
+                return (T)Convert.ChangeType(sqlcon.ExecuteScalar<T>(procedurename, param, commandType: System.Data.CommandType.StoredProcedure), typeof(T));
             }
         }
     }
