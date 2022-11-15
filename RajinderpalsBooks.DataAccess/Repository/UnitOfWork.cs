@@ -18,8 +18,18 @@ namespace RajinderpalsBooks.DataAccess.Repository
         }
 
         public  ICategoryRepository Category { get;  private set; }
+        public ISP_Call SP_Call { get; private set; }
+
+        public void Dispose()
+        {
+            _db.Dispose();
+        }
+        public void Save()  // all changes will be savwed when the save metgod is called parent level
+        {
+            _db.SaveChanges();
+        }
 
         
-            ;
+            
     }
 }
