@@ -58,9 +58,12 @@ added a new words area.exists
     [Area("Customer")] in homecontroller.cs
      move views into controller
      coorected the errors i the error.html file 
-i Have no errors still my application lost its connection with local host 
+I Have no errors still my application lost its connection with local host 
 changed the location for shared 
-and changed the start up file `
+and changed the start up file 
+
+started 2 part`
+
 2022-11-04    0541
 created a new folder name admin in areas, then deleted models and data folder.
 0547
@@ -150,6 +153,9 @@ added a new interface in Irepository
  added content in UNItOfWork.
  1022
  added content and updated startup
+
+1024
+added class in controller called category.cs
 
 
 
