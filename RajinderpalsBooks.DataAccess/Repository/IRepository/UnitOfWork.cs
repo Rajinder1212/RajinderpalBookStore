@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RajinderpalsBooks.DataAccess.Repository.IRepository
 {
-    interface IUnitOfWork
+    interface UnitOfWork
     {
     }
 }
