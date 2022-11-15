@@ -157,6 +157,8 @@ added a new interface in Irepository
 1024
 added class in controller called category.cs
 
+1034 added content in categorycontroller.cs
+
 
 
 
