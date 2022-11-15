@@ -20,14 +20,6 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             return View();
         }
         // API calls here
-        #region API Calls
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            // return NotFound ();
-            var allObj = _unitOfwork.Category.Getall();
-            return Json(new { data = allObj });
-        }
-        #endregion
+        #region
     }
 }
