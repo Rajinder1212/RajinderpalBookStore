@@ -159,6 +159,11 @@ added class in controller called category.cs
 
 1034 added content in categorycontroller.cs
 
+11-44-2022
+1044
+I got error in adding content in categoryController.cs
+Now I have resolved it . and it works
+
 
 
 
