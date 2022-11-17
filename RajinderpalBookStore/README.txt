@@ -164,6 +164,9 @@ added class in controller called category.cs
 I got error in adding content in categoryController.cs
 Now I have resolved it . and it works
 
+1100
+added a new view named index.cshtml
+
 
 
 
