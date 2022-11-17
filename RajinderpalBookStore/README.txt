@@ -166,6 +166,8 @@ Now I have resolved it . and it works
 
 1100
 added a new view named index.cshtml
+1121
+remove / from index.cshtml
 
 
 
