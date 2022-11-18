@@ -175,6 +175,8 @@ added a content in _layout.cshtml
 
 0216
 added font in index.cshtml
+0224
+added @section in index.cshtml
 
 
 
