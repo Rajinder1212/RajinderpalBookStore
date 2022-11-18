@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RajinderpalsBooks.DataAccess.Repository.IRepository
 {
-   public interface IUnitOfWork
+   public interface UnitOfWork
     {
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }

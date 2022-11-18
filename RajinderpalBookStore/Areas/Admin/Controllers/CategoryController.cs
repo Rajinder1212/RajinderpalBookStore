@@ -11,10 +11,10 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
     [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly UnitOfWork _unitOfWork;
       
 
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CategoryController(UnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
