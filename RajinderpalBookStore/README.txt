@@ -175,17 +175,25 @@ added a content in _layout.cshtml
 
 0216
 added font in index.cshtml
+
 0224
 added @section in index.cshtml
+
 0236
 added content in categoryController.cs
+
 0239
 add category in view in index.cshtml
 0244
 added a view in upsert named Upsert.cshtml
 added content in upsert.cshtml
+
 0252
 added view named _CreatetoBackTolistButton.cshtml
+
+0258
+added another view called _EditandBackToListButton.cshtml
+
 
 
 
