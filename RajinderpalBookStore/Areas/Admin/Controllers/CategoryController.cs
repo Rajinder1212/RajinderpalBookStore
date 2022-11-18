@@ -5,13 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.Models;
+using RajinderpalsBooks.DataAccess.Repository;
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly UnitOfWork _unitOfWork;
+        private readonly    UnitOfWork _unitOfWork;
       
 
         public CategoryController(UnitOfWork unitOfWork)
@@ -39,6 +40,26 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             }
             return View(category);
             
+        }
+        // use HTTP POST to define the poat-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category
+            {
+            if(ModelState.Isvalid)   //checks all the validation in model (e.g Name Required)    to increase security
+            {
+                if(category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                    _unitOfWork.Save();+
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);  
+                }
+            }
+            return View(category);
+
         }
 
         // API calls here   

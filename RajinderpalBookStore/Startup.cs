@@ -33,7 +33,7 @@ namespace RajinderpalBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>() //options => options.SignIn.RequireConfirmedAccount = true  removed this line 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-          //  services.AddScoped<UnitOfWork, UnitOfWork>(); 
+           // services.AddScoped<IUnitOfWork, IUnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

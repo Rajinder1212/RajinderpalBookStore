@@ -197,6 +197,9 @@ added another view called _EditandBackToListButton.cshtml
 0319
 added content in upsert.cshtml again
 
+0348
+added @model and @section content in the upsert.cshml and index.cshtml 
+updated the IUnitOfWork 
 
 
 
