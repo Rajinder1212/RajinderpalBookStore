@@ -169,6 +169,10 @@ added a new view named index.cshtml
 1121
 remove / from index.cshtml
 
+11-18-2022
+0158
+added a content in _layout.cshtml
+
 
 
 
