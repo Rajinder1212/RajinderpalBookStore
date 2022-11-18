@@ -179,6 +179,10 @@ added font in index.cshtml
 added @section in index.cshtml
 0236
 added content in categoryController.cs
+0239
+add category in view in index.cshtml
+0244
+added a view in upsert named Upsert.cshtml
 
 
 
