@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
-
+using RajinderpalsBooks.Models;
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
 {
@@ -22,6 +22,25 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public IActionResult Upsert(int? id)// action method for upsert
+        {
+            CategoryController category = new Category();   //using RajinderpalsBooks.models;
+            if (id == null)
+            {
+                // this is for create
+                return View(category);
+            }
+            //this fro the edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return View();
+            
+        }
+
         // API calls here   
         #region API CALLS
         [HttpGet]
@@ -30,6 +49,11 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             //return Not Found();
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj }); 
+        }
+
+        public static implicit operator CategoryController(Category v)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }
