@@ -183,7 +183,7 @@ added content in categoryController.cs
 add category in view in index.cshtml
 0244
 added a view in upsert named Upsert.cshtml
-
+added content in upsert.cshtml
 
 
 
