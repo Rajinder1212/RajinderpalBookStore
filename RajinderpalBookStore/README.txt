@@ -232,6 +232,9 @@ Added a new class named covertype.cs in models folder
 0546
 added Name and Id in covertype.cs
 
+0552
+added new item in IRepository named ICoverTypeRepository.cs
+
 
 
 
