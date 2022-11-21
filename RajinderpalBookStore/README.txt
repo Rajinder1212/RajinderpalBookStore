@@ -224,8 +224,10 @@ added content in category.js
 0537
 coreected all the small errors 
 but still i m not able to use my create category button 
-
 Did changes in categorycontroller.cs
+
+0544
+Added a new class named covertype.cs in models folder
 
 
 
