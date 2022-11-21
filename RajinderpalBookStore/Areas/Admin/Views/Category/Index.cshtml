@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
@@ -10,7 +7,7 @@
         <h2 class="text-primary">Category List </h2>
     </div>
     <div class="col-6 text-right">
-        <a class="btn btn-primary"asp-action="Upsert"><i class="fas fa-plus"></i> &nbsp; Create New Category</a>
+        <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus"></i> &nbsp; Create New Category</a>
     </div>
 </div>
 
@@ -25,17 +22,18 @@
         </thead>
     </table>
 </div>
-<div class="text-center">
-    <a href="/Admin/Category/Upsert/id" class="btn btn-success text-white" atyle="cursor:pointer">
-    <i class="fas fa-edit"></i>&nbsp;
+
+@*<div class="text-center">
+        <a href="/Admin/Category/Upsert/id" class="btn btn-success text-white" style="cursor:pointer">
+        <i class="fas fa-edit"></i>&nbsp;
+            </a>
+        <a class="btn btn-danger text-white" style="cursor:pointer">
+            <i class="fas fa-trash-alt"></i>&nbsp;
         </a>
-    <a class="btn btn-danger text-white" style="cursor:pointer">
-        <i class="fas fa-trash-alt"></i>&nbsp;
-    </a>
-</div>
+    </div>*@
 @section Scripts{
-<script src="~/js/category.js"></script>
- }
+    <script src="~/js/category.js"></script>
+}
 
 
 

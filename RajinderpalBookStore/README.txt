@@ -221,7 +221,8 @@ And added void Save
 0347
 added content in category.js
 
-
+coreected all the small errors 
+but still i m not able to use my create category button 
 
 
 

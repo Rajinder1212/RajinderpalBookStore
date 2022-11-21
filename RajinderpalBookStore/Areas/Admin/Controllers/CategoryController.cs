@@ -26,7 +26,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)// action method for upsert
         {
-            CategoryController category = new Category();   //using RajinderpalsBooks.models;
+            Category category = new Category();   //using RajinderpalsBooks.models;
             if (id == null)
             {
                 // this is for create
