@@ -218,6 +218,9 @@ In _layout.cshtml correct the catgory name in drop down menu
 In categorycontroller.cs  added IUnitofwork
 And added void Save
 
+0347
+added content in category.js
+
 
 
 
