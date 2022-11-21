@@ -203,10 +203,22 @@ updated the IUnitOfWork
 
 2022-11-21
 0253
+
 InvalidOperationException: The constraint reference 'Admin' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
 Did changes in categorycontroller.cs
 views.import.cshtml changed layout
 In unitofwork.cs added : Iunitofwork
+
+0313
+InvalidOperationException: The constraint reference 'Admin' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+Solution added the route for admin in startup.cs it resolved
+
+0315
+In _layout.cshtml correct the catgory name in drop down menu
+In categorycontroller.cs  added IUnitofwork
+And added void Save
+
+
 
 
 

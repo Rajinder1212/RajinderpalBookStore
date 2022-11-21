@@ -66,12 +66,12 @@ namespace RajinderpalBookStore
                 endpoints.MapAreaControllerRoute(
                     name: "Area",
                     areaName:"Customer",
-                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                  pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
                 endpoints.MapAreaControllerRoute(
                     name: "Area",
                     areaName: "Admin",
-                  pattern: "{area:Admin}/{controller=Home}/{action=Index}/{id?}");
+                  pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(
                 name: "default",
