@@ -60,7 +60,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+           return View(category);
 
         }
 
