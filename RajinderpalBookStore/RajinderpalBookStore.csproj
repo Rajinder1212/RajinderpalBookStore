@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RajinderpalsBooks.DataAccess\RajinderpalsBooks.DataAccess.csproj" />
     <ProjectReference Include="..\RajinderpalsBooks.Models\RajinderpalsBooks.Models.csproj" />
+    <ProjectReference Include="..\RajinderpalsBooks.Utility\RajinderpalsBooks.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

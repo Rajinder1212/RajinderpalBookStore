@@ -41,26 +41,29 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             return View(category);
             
         }
-        // use HTTP POST to define the poat-action method
+        // use HTTP POST to define the post-action method
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Category category
+        public IActionResult Upsert(Category category)
             {
-            if(ModelState.Isvalid)   //checks all the validation in model (e.g Name Required)    to increase security
+            if(ModelState.IsValid)   //checks all the validation in model (e.g Name Required)    to increase security
             {
                 if(category.Id == 0)
                 {
                     _unitOfWork.Category.Add(category);
-                    _unitOfWork.Save();+
+                    _unitOfWork.Save();
                 }
                 else
                 {
                     _unitOfWork.Category.Update(category);  
                 }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
             }
             return View(category);
 
         }
+
 
         // API calls here   
         #region API CALLS
@@ -72,10 +75,12 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             return Json(new { data = allObj }); 
         }
 
+
         public static implicit operator CategoryController(Category v)
         {
             throw new NotImplementedException();
         }
+
         #endregion
     }
 }

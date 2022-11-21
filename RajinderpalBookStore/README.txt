@@ -201,7 +201,12 @@ added content in upsert.cshtml again
 added @model and @section content in the upsert.cshml and index.cshtml 
 updated the IUnitOfWork 
 
-
+2022-11-21
+0253
+InvalidOperationException: The constraint reference 'Admin' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+Did changes in categorycontroller.cs
+views.import.cshtml changed layout
+In unitofwork.cs added : Iunitofwork
 
 
 

@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
+using RajinderpalsBooks.DataAccess.Repository;
 
 namespace RajinderpalBookStore
 {
@@ -33,7 +34,7 @@ namespace RajinderpalBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>() //options => options.SignIn.RequireConfirmedAccount = true  removed this line 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-           // services.AddScoped<IUnitOfWork, IUnitOfWork>();
+           services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -63,9 +64,15 @@ namespace RajinderpalBookStore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapAreaControllerRoute(
-                    name: "Areas",
+                    name: "Area",
                     areaName:"Customer",
                   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapAreaControllerRoute(
+                    name: "Area",
+                    areaName: "Admin",
+                  pattern: "{area:Admin}/{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapControllerRoute(
                 name: "default",
                   pattern: "{controller=Home}/{action=Index}/{id?}");
