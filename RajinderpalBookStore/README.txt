@@ -229,6 +229,9 @@ Did changes in categorycontroller.cs
 0544
 Added a new class named covertype.cs in models folder
 
+0546
+added Name and Id in covertype.cs
+
 
 
 
