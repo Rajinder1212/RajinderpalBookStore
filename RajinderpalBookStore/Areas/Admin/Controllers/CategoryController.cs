@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.Models;
-using RajinderpalsBooks.DataAccess.Data;
+
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
 {

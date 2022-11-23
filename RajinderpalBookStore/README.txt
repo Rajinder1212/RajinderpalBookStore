@@ -235,9 +235,14 @@ added Name and Id in covertype.cs
 0552
 added new item in IRepository named ICoverTypeRepository.cs
 
-0822
-corrected small errors for connecting the button 
-added the view file in the Admin folder of views 
+2022-11-22
+0832
+corrected small errors for connecting the button  and  added the view file in the Admin folder of views 
+
+0834
+added content om covertype.cs & added 2properties of id and name as same as category.cs
+
+
 
 
 
