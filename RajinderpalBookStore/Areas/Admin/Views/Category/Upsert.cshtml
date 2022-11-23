@@ -1,12 +1,12 @@
 ﻿@model RajinderpalsBooks.Models.Category;
 @{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var title = "create category";
+    var title = "Create Category";
 }
 <form method="post">
     <div class="row p-3 border">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @if (Model.Id != null)
+        @if (Model.Id != 0)
         {
             //edit
             title = "Edit Category";
@@ -27,14 +27,14 @@
             <div class="form-group row">
            
                 <div class="col-8 offset-4">
-                    @if(Model.Id !=0)
+                   @if(Model.Id != 0)
             {
-                <partial name="_EditAndBackToListButton" model="Model.Id" />
-                    }
-                    else
+                <partial name="_EditAndBackToListButton" model="Model.Id"/>
+            }
+            else
             {
-                <partial name="_CreateAndBackTListButton"/>            }
-                  
+                <partial name="_CreateAndBackToListButton"/>
+            }
                 </div>
             </div>
         </div>

@@ -235,6 +235,9 @@ added Name and Id in covertype.cs
 0552
 added new item in IRepository named ICoverTypeRepository.cs
 
+0822
+corrected small errors for connecting the button 
+added the view file in the Admin folder of views 
 
 
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.Models;
-using RajinderpalsBooks.DataAccess.Repository;
+using RajinderpalsBooks.DataAccess.Data;
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
 {
@@ -44,24 +44,20 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
         // use HTTP POST to define the post-action method
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Category category)
-            {
-            if(ModelState.IsValid)   //checks all the validation in model (e.g Name Required)    to increase security
-            {
-                if(category.Id == 0)
-                {
-                    _unitOfWork.Category.Add(category);
-                    _unitOfWork.Save();
-                }
-                else
-                {
-                    _unitOfWork.Category.Update(category);  
-                }
-                _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));
-            }
-           return View(category);
 
+        public IActionResult Upsert(Category category)
+        {
+            if (category.Id == 0)
+            {
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
+            }
+            else
+            {
+                _unitOfWork.Category.Update(category);
+            }
+            _unitOfWork.Save();
+            return RedirectToAction(nameof(Index));   // to see all the categories
         }
 
 
@@ -74,18 +70,17 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj }); 
         }
-        [HttpDelete]
+        [HttpDelete]                // added an HttpDelete 
         public IActionResult Delete(int id)
         {
             var objFromDb = _unitOfWork.Category.Get(id);
-                if (objFromDb == null)
+            if (objFromDb == null)
             {
-                return Json(new { success = false, message = " Error while deleting" });
+                return Json(new { success = false, message = "Error while deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
-
         }
 
         public static implicit operator CategoryController(Category v)
