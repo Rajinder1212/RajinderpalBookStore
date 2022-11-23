@@ -242,6 +242,12 @@ corrected small errors for connecting the button  and  added the view file in th
 0834
 added content om covertype.cs & added 2properties of id and name as same as category.cs
 
+0855
+add covertyperepository class
+add ICoverTypeRepository Intrface
+add CoverType to UnitOfWork and IUnitOfWork
+push CoverType to the database 
+
 
 
 

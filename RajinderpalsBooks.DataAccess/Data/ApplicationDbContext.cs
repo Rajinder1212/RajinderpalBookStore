@@ -13,5 +13,6 @@ namespace RajinderpalsBooks.DataAccess.Data // added DataAccess.Data
         {
         }
         public DbSet<Category> Categories { get; set; }   // added this line
+        public DbSet<Category> CoverType { get; set; }
     }
 }
