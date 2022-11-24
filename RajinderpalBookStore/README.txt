@@ -279,7 +279,7 @@ added the product Controllers
 added all the view files in te product folder and updated the layout.cshtml and adde a new js file for the product 
 updatedthe UnitOfWork with product 
 
-
-
-
+08:43
+Added the webHostEnvironment 
+and its reference in the productControllers file 
 

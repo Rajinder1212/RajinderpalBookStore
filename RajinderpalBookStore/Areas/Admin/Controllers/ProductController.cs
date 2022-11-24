@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.Models;
+using Microsoft.AspNetCore.Hosting;
+
 
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
@@ -13,11 +15,13 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
 
-        public ProductController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork , IWebHostEnvironment hostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
         }
         public IActionResult Index()
         {
