@@ -253,6 +253,11 @@ push CoverType to the database
 added migration for the CoverType 
 and Added the CoverType for the refernce in the ApplicationdbContext 
 
+8:02
+added an CoverTypeController in the admin folder in controllers 
+added and new overType in the views to add index and upsert files and made changs 
+updated the IcategoryRepository to fix erros 
+added the link for coverType n the nav in the _layout file 
 
 
  

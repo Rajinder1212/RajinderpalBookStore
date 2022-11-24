@@ -10,6 +10,7 @@ namespace RajinderpalsBooks.DataAccess.Repository.IRepository
 
     {
         void Update(Category category);
+        
     }
 
 }
