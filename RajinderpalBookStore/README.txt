@@ -248,8 +248,10 @@ add ICoverTypeRepository Intrface
 add CoverType to UnitOfWork and IUnitOfWork
 push CoverType to the database 
 
+2022-11-24
 
-
+added migration for the CoverType 
+and Added the CoverType for the refernce in the ApplicationdbContext 
 
 
 
