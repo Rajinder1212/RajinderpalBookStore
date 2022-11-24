@@ -6,12 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RajinderpalBookStore", "RajinderpalBookStore\RajinderpalBookStore.csproj", "{5DC83EA6-F44C-44D9-84CD-1B4932B9C2BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D49FD14-848C-4052-8D4B-E916C963B8EC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RajinderpalsBooks.DataAccess", "RajinderpalsBooks.DataAccess\RajinderpalsBooks.DataAccess.csproj", "{AA8D037C-6839-4EC2-8797-A50FC9119CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RajinderpalsBooks.DataAccess", "RajinderpalsBooks.DataAccess\RajinderpalsBooks.DataAccess.csproj", "{AA8D037C-6839-4EC2-8797-A50FC9119CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RajinderpalsBooks.Models", "RajinderpalsBooks.Models\RajinderpalsBooks.Models.csproj", "{AAA34173-0A08-4498-8F05-C78F931A54AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RajinderpalsBooks.Models", "RajinderpalsBooks.Models\RajinderpalsBooks.Models.csproj", "{AAA34173-0A08-4498-8F05-C78F931A54AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RajinderpalsBooks.Utility", "RajinderpalsBooks.Utility\RajinderpalsBooks.Utility.csproj", "{A0A28475-432A-4B37-B464-67213A9B9319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RajinderpalsBooks.Utility", "RajinderpalsBooks.Utility\RajinderpalsBooks.Utility.csproj", "{A0A28475-432A-4B37-B464-67213A9B9319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

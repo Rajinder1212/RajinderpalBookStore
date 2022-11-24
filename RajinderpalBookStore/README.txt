@@ -283,3 +283,7 @@ updatedthe UnitOfWork with product
 Added the webHostEnvironment 
 and its reference in the productControllers file 
 
+09:17
+added a new productVM in the models folder 
+updated the productControllers 
+added the pakage 

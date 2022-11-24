@@ -5,9 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using RajinderpalsBooks.DataAccess.Repository.IRepository;
 using RajinderpalsBooks.Models;
+using RajinderpalsBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Hosting;
-
-
+using static System.Net.Mime.MediaTypeNames;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace RajinderpalBookStore.Areas.Admin.Controllers
 {
@@ -30,23 +31,37 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)// action method for upsert
         {
-            Product product = new Product();   //using RajinderpalsBooks.models;
+            ProductVM productVM = new ProductVM()
+            {
+                Product = new Product(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                })
+            };
+           // Product product = new Product();   //using RajinderpalsBooks.models;
             if (id == null)
             {
                 // this is for create
-                return View(product);
+                return View(productVM);
             }
             //this fro the edit
-            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (product == null)
+            productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if (productVM == null)
             {
                 return NotFound();
             }
-            return View(product);
+            return View(productVM);
 
         }
         // use HTTP POST to define the post-action method
-        [HttpPost]
+        /*[HttpPost]
         [ValidateAntiForgeryToken]
 
         public IActionResult Upsert(Product product)
@@ -62,7 +77,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             }
             _unitOfWork.Save();
             return RedirectToAction(nameof(Index));   // to see all the categories
-        }
+        }*/
 
 
         // API calls here   
@@ -71,7 +86,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //return Not Found();
-            var allObj = _unitOfWork.Product.GetAll();
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
             return Json(new { data = allObj });
         }
         [HttpDelete]                // added an HttpDelete 
