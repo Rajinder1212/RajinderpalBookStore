@@ -253,37 +253,37 @@ push CoverType to the database
 added migration for the CoverType 
 and Added the CoverType for the refernce in the ApplicationdbContext 
 
-8:02
-added an CoverTypeController in the admin folder in controllers 
-added and new overType in the views to add index and upsert files and made changs 
+0802
+added an CoverTypeController in the admin folder in controllers  and new overType in the views to add index and upsert files and made changs 
 updated the IcategoryRepository to fix erros 
 added the link for coverType n the nav in the _layout file 
 
-20221124124125_AddCoverTypeToDb    name for coverType for migration 
+20221124124125_AddCoverTypeToDb   name for coverType for migration 
 
-8:12 
-added a new file in the models named Product and added refernece in the ApplicationDbContext 
-added migration and updated the database
+0812 
+added a new file in the models named Product and added refernece in the ApplicationDbContext added migration and updated the database
 20221124131141_addProductToDb     name for Product for migration 
 
-8:15 
+0815 
 added [Required] for title , ISBN and author and added migration 
 20221124131516_addValidationToProduct   name for vaiation of product 
 
-08:26
+0826
 added a newIproduct and Product Repository files 
 and updated the IuUnitOfWork and UnitOfWork 
 
-08:36
+0836
 added the product Controllers 
 added all the view files in te product folder and updated the layout.cshtml and adde a new js file for the product 
 updatedthe UnitOfWork with product 
 
-08:43
+0843
 Added the webHostEnvironment 
 and its reference in the productControllers file 
 
-09:17
-added a new productVM in the models folder 
-updated the productControllers 
-added the pakage 
+0917
+added a new productVM in the models folder  and updated the productControllers 
+ Added package
+
+ 0935
+ added content in index.cshtml in product
