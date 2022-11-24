@@ -9,6 +9,7 @@ namespace RajinderpalsBooks.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
         ICoverTypeRepository CoverType { get; set; }
+        IProductRepository Product { get; set; }
 
         void Save();
     }

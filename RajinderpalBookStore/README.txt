@@ -269,7 +269,10 @@ added migration and updated the database
 8:15 
 added [Required] for title , ISBN and author and added migration 
 20221124131516_addValidationToProduct   name for vaiation of product 
- 
+
+08:26
+added a newIproduct and Product Repository files 
+and updated the IuUnitOfWork and UnitOfWork 
 
 
 
