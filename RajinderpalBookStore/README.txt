@@ -286,3 +286,6 @@ added a new productVM in the models folder  and updated the productControllers
 
  0935
  added content in index.cshtml in product
+
+ 1017
+ added content in product.js

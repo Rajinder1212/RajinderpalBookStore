@@ -11,7 +11,11 @@ function loadDataTable() {
             "url": "/Admin/Product/GetAll"
         },
         "columns": [
-            { "data": "name", "width": "60%" },
+            { "data": "title", "width": "60%" },
+            { "data": "isbn", "width": "60%" },
+            { "data": "price", "width": "60%" },
+            { "data": "author", "width": "60%" },
+            { "data": "category.Name", "width": "60%" },
             {
                 "data": "id",
                 "render": function (data) {
