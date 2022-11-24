@@ -266,6 +266,9 @@ added a new file in the models named Product and added refernece in the Applicat
 added migration and updated the database
 20221124131141_addProductToDb     name for Product for migration 
 
+8:15 
+added [Required] for title , ISBN and author and added migration 
+20221124131516_addValidationToProduct   name for vaiation of product 
  
 
 
