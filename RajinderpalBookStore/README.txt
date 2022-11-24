@@ -210,7 +210,7 @@ views.import.cshtml changed layout
 In unitofwork.cs added : Iunitofwork
 
 0313
-InvalidOperationException: The constraint reference 'Admin' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+InvalidOperationException: The constraint reference 'Admin' could not be resolved to a type.Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
 Solution added the route for admin in startup.cs it resolved
 
 0315
@@ -269,13 +269,12 @@ added [Required] for title , ISBN and author and added migration
 20221124131516_addValidationToProduct   name for vaiation of product 
 
 0826
-added a newIproduct and Product Repository files 
-and updated the IuUnitOfWork and UnitOfWork 
+added a newIproduct and Product Repository files and updated the IuUnitOfWork and UnitOfWork 
 
 0836
 added the product Controllers 
 added all the view files in te product folder and updated the layout.cshtml and adde a new js file for the product 
-updatedthe UnitOfWork with product 
+updated UnitOfWork with product 
 
 0843
 Added the webHostEnvironment 
