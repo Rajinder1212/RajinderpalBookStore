@@ -259,6 +259,12 @@ added and new overType in the views to add index and upsert files and made chang
 updated the IcategoryRepository to fix erros 
 added the link for coverType n the nav in the _layout file 
 
+20221124124125_AddCoverTypeToDb    name for coverType for migration 
+
+8:12 
+added a new file in the models named Product and added refernece in the ApplicationDbContext 
+added migration and updated the database
+20221124131141_addProductToDb     name for Product for migration 
 
  
 

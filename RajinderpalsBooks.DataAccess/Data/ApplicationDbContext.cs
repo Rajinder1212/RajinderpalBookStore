@@ -14,5 +14,6 @@ namespace RajinderpalsBooks.DataAccess.Data // added DataAccess.Data
         }
         public DbSet<Category> Categories { get; set; }   // added this line
         public DbSet<CoverType> CoverType { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
