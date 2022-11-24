@@ -292,3 +292,4 @@ added a new productVM in the models folder  and updated the productControllers
 
  1021
  modified width in product.js
+ added curly bracked in product.js
