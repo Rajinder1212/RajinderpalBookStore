@@ -274,7 +274,10 @@ added [Required] for title , ISBN and author and added migration
 added a newIproduct and Product Repository files 
 and updated the IuUnitOfWork and UnitOfWork 
 
-
+08:36
+added the product Controllers 
+added all the view files in te product folder and updated the layout.cshtml and adde a new js file for the product 
+updatedthe UnitOfWork with product 
 
 
 
