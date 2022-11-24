@@ -289,3 +289,6 @@ added a new productVM in the models folder  and updated the productControllers
 
  1017
  added content in product.js
+
+ 1021
+ modified width in product.js
