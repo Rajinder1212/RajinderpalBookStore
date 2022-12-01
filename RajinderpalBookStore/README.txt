@@ -294,7 +294,7 @@ added a new productVM in the models folder  and updated the productControllers
  modified width in product.js
  added curly bracked in product.js
 
- 0844pm 
+ 0844
  made few changes in the productcontroller to fix errors 
  added the new upsert file in the product.cs 
 
@@ -304,3 +304,6 @@ added a new productVM in the models folder  and updated the productControllers
  1) images 
  and subfolder 
  2) products 
+
+ 0902
+ added data in the home controller .cs in the customer
