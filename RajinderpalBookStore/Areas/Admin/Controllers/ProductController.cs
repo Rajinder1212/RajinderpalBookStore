@@ -61,7 +61,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
 
         }
         // use HTTP POST to define the post-action method
-        /*[HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
 
         public IActionResult Upsert(Product product)
@@ -77,7 +77,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             }
             _unitOfWork.Save();
             return RedirectToAction(nameof(Index));   // to see all the categories
-        }*/
+        }
 
 
         // API calls here   
@@ -86,7 +86,7 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //return Not Found();
-            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
             return Json(new { data = allObj });
         }
         [HttpDelete]                // added an HttpDelete 
@@ -100,11 +100,6 @@ namespace RajinderpalBookStore.Areas.Admin.Controllers
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
-        }
-
-        public static implicit operator ProductController(Product v)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion

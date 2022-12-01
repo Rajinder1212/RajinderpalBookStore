@@ -293,3 +293,14 @@ added a new productVM in the models folder  and updated the productControllers
  1021
  modified width in product.js
  added curly bracked in product.js
+
+ 0844pm 
+ made few changes in the productcontroller to fix errors 
+ added the new upsert file in the product.cs 
+
+ made changes in the product.js 
+
+ added two new folders in the wwwrooot file 
+ 1) images 
+ and subfolder 
+ 2) products 
