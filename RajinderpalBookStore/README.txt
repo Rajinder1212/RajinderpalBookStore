@@ -307,3 +307,7 @@ added a new productVM in the models folder  and updated the productControllers
 
  0902
  added data in the home controller .cs in the customer
+
+ 0908
+ For the part 4 i made changes in the index.cshtml 
+for displaying the data for the products 
