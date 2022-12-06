@@ -311,3 +311,9 @@ added a new productVM in the models folder  and updated the productControllers
  0908
  For the part 4 i made changes in the index.cshtml 
 for displaying the data for the products 
+
+2022-12-06
+
+0946
+
+updated the index page
